@@ -1,0 +1,75 @@
+.video-widget {
+    position: fixed;
+    border: 2px solid rgb(0, 140, 104);
+    border-radius: 15px;
+    max-width: 124px;
+    overflow: hidden;
+    cursor: pointer;
+    transform-origin: bottom left;
+    position: fixed;
+    transition: 0.3s ease-in;
+    left: 50px;
+    bottom: 50px;
+}
+
+.video-widget:hover {
+    max-width: 130px;
+}
+
+.video-widget.active {
+    max-width: 312px;
+    transition: 0.3s ease-in;
+}
+
+.video-widget.remove {
+    display: none !important;
+}
+
+.video-widget video {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-widget .buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    right: 10px;
+}
+
+.video-widget .buttons div {
+    display: none;
+    width: 22px;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 100px;
+    transition: 0.3s ease-in;
+}
+
+
+.video-widget.active .buttons div {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.video-widget .buttons .close {
+    margin-bottom: 10px;
+}
+
+.video-widget:hover .buttons .close {
+    display: block;
+}
+
+.video-widget .buttons .mute:not(.muted) svg:first-child {
+    display: none;
+}
+
+.video-widget .buttons .muted svg:last-child {
+    display: none;
+}
