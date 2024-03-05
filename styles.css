@@ -1,9 +1,9 @@
 .itc-slider-btn-prev::before {
-    background-image: url(/img/slider-btn-prev.svg);
+    background-image: url(img/slider-btn-prev.svg);
   }
   
   .itc-slider-btn-next::before {
-    background-image: url(/img/slider-btn-next.svg);
+    background-image: url(img/slider-btn-next.svg);
   }
   .main_uslugi_slider {
     max-width: 1435px;
